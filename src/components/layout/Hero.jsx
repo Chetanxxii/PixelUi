@@ -1,5 +1,6 @@
 import Section from "./Section";
 import { site } from "../../data/site";
+import { Link } from "react-router";
 
 const Hero = () => {
   return (
@@ -22,9 +23,12 @@ const Hero = () => {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <button className="rounded-xl bg-zinc-900 px-6 py-3 text-white transition hover:-translate-y-0.5 hover:bg-zinc-800">
-              Browse Components
-            </button>
+            <Link
+  to="/components"
+  className="rounded-xl bg-zinc-900 px-6 py-3 text-white transition hover:-translate-y-0.5 hover:bg-zinc-800"
+>
+  Browse Components
+</Link>
 
             <button className="rounded-xl border border-zinc-300 px-6 py-3 transition hover:bg-zinc-100">
               GitHub
