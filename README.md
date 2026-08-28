@@ -1,16 +1,45 @@
-# React + Vite
+# PixelUI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A production-ready React + Tailwind CSS component library built from scratch.
 
-Currently, two official plugins are available:
+## Why PixelUI?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+PixelUI is a learning-first project focused on building reusable UI components without relying on generators or pre-built component libraries.
 
-## React Compiler
+The goal is to understand how production-level components are designed, structured, and documented.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Live component previews
+- Copy-paste JSX code
+- React + Tailwind CSS only
+- Responsive components
+- Clean and readable code
+- Beginner-friendly architecture
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+- React
+- Tailwind CSS
+- Vite
+
+## Roadmap
+
+- [x] Project setup
+- [ ] Homepage
+- [ ] Button
+- [ ] Input
+- [ ] Card
+- [ ] Modal
+- [ ] Toast
+- [ ] Search
+- [ ] Dark Mode
+- [ ] Documentation
+
+## Contributing
+
+Contributions and suggestions are welcome.
+
+## License
+
+MIT
