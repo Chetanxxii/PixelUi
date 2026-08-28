@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Components from "./pages/Components";
 import ButtonPage from "./pages/ButtonPage";
 import InputPage from "./pages/InputPage";
+import Docs from "./pages/Docs";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/components" element={<Components />} />
         <Route path="/components/button" element={<ButtonPage />} />
         <Route path="/components/input" element={<InputPage />} />
+        <Route path="/docs" element={<Docs />} />
       </Routes>
     </div>
   );
