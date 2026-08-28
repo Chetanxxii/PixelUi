@@ -6,6 +6,7 @@ import { buttonCode } from "../components/ui/Button/ButtonCode";
 import PreviewCard from "../components/shared/PreviewCard";
 import CodeBlock from "../components/shared/CodeBlock";
 import PropsTable from "../components/shared/PropsTable";
+import ButtonPlayground from "../components/ui/Button/ButtonPlayground";
 
 const buttonProps = [
   {
@@ -48,6 +49,10 @@ const ButtonPage = () => {
           </Button>
         </div>
       </PreviewCard>
+
+      <PreviewCard title="Playground">
+  <ButtonPlayground />
+</PreviewCard>
 
       <CodeBlock
         title="Button.jsx"

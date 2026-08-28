@@ -14,7 +14,7 @@ const PreviewCard = ({
         </span>
       </div>
 
-      <div className="flex min-h-45 items-center justify-center p-8">
+      <div className=" p-8">
         {children}
       </div>
     </div>
