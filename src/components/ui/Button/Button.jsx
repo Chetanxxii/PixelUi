@@ -3,9 +3,13 @@ const Button = ({
   variant = "primary",
   size = "md",
   disabled = false,
+  loading = false,
+  fullWidth = false,
+  leftIcon,
+  rightIcon,
 }) => {
   const base =
-    "inline-flex items-center justify-center rounded-xl font-medium transition-all duration-200";
+    "inline-flex items-center justify-center gap-2 rounded-xl font-medium transition-all duration-200 active:scale-[0.98]";
 
   const variants = {
     primary: "bg-zinc-900 text-white hover:bg-zinc-800",
@@ -20,16 +24,31 @@ const Button = ({
     lg: "px-6 py-3 text-lg",
   };
 
-  const disabledStyle = disabled
-    ? "opacity-50 cursor-not-allowed"
-    : "cursor-pointer";
+  const disabledStyle =
+    disabled || loading
+      ? "cursor-not-allowed opacity-50"
+      : "cursor-pointer";
 
   return (
     <button
-      disabled={disabled}
-      className={`${base} ${variants[variant]} ${sizes[size]} ${disabledStyle}`}
+      disabled={disabled || loading}
+      aria-busy={loading}
+      className={`${base} ${variants[variant]} ${sizes[size]} ${disabledStyle} ${
+        fullWidth ? "w-full" : ""
+      }`}
     >
-      {children}
+      {loading ? (
+        <>
+          <span className="h-4 w-4 animate-spin rounded-full border-2 border-current border-t-transparent"></span>
+          Loading...
+        </>
+      ) : (
+        <>
+          {leftIcon}
+          {children}
+          {rightIcon}
+        </>
+      )}
     </button>
   );
 };
