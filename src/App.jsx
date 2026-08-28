@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router";
 import Home from "./pages/Home";
 import Components from "./pages/Components";
 import ButtonPage from "./pages/ButtonPage";
+import InputPage from "./pages/InputPage";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/components" element={<Components />} />
         <Route path="/components/button" element={<ButtonPage />} />
+        <Route path="/components/input" element={<InputPage />} />
       </Routes>
     </div>
   );

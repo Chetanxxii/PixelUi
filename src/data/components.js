@@ -7,12 +7,12 @@ export const components = [
     status: "Ready",
   },
   {
-    id: "input",
-    title: "Input",
-    description: "Accessible text input with clean styling.",
-    category: "Inputs",
-    status: "Coming Soon",
-  },
+  id: "input",
+  title: "Input",
+  description: "Accessible text input with clean styling.",
+  category: "Inputs",
+  status: "Ready",
+},
   {
     id: "card",
     title: "Card",
