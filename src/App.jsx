@@ -1,13 +1,14 @@
-import Navbar from "./components/layout/Navbar";
-import Hero from "./components/layout/Hero";
-import FeaturedComponents from "./components/layout/FeaturedComponents";
+import { Routes, Route } from "react-router";
+import Home from "./pages/Home";
+import Components from "./pages/Components";
 
 function App() {
   return (
     <div className="min-h-screen bg-white text-zinc-900">
-      <Navbar />
-      <Hero />
-      <FeaturedComponents />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/components" element={<Components />} />
+      </Routes>
     </div>
   );
 }

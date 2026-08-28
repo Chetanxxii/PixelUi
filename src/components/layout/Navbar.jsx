@@ -1,4 +1,5 @@
 import Container from "./Container";
+import { Link } from "react-router";
 
 const Navbar = () => {
   return (
@@ -16,9 +17,12 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-6">
-            <button className="text-sm text-zinc-600 hover:text-zinc-900 transition">
-              Components
-            </button>
+           <Link
+  to="/components"
+  className="text-sm text-zinc-600 transition hover:text-zinc-900"
+>
+  Components
+</Link>
 
             <button className="text-sm text-zinc-600 hover:text-zinc-900 transition">
               Docs
