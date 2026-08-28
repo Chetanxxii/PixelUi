@@ -8,14 +8,10 @@ const Button = ({
     "inline-flex items-center justify-center rounded-xl font-medium transition-all duration-200";
 
   const variants = {
-    primary:
-      "bg-zinc-900 text-white hover:bg-zinc-800",
-    secondary:
-      "bg-zinc-100 text-zinc-900 hover:bg-zinc-200",
-    outline:
-      "border border-zinc-300 hover:bg-zinc-100",
-    ghost:
-      "hover:bg-zinc-100",
+    primary: "bg-zinc-900 text-white hover:bg-zinc-800",
+    secondary: "bg-zinc-100 text-zinc-900 hover:bg-zinc-200",
+    outline: "border border-zinc-300 hover:bg-zinc-100",
+    ghost: "hover:bg-zinc-100",
   };
 
   const sizes = {
@@ -24,10 +20,9 @@ const Button = ({
     lg: "px-6 py-3 text-lg",
   };
 
-  const disabledStyle =
-    disabled
-      ? "opacity-50 cursor-not-allowed"
-      : "cursor-pointer";
+  const disabledStyle = disabled
+    ? "opacity-50 cursor-not-allowed"
+    : "cursor-pointer";
 
   return (
     <button

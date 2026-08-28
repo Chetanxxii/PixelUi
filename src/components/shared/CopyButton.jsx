@@ -15,11 +15,15 @@ const CopyButton = ({ code }) => {
 
   return (
     <button
-      onClick={handleCopy}
-      className="rounded-lg border border-zinc-300 px-4 py-2 text-sm hover:bg-zinc-100"
-    >
-      {copied ? "Copied!" : "Copy Code"}
-    </button>
+  onClick={handleCopy}
+  className={`rounded-lg px-4 py-2 text-sm transition ${
+    copied
+      ? "bg-green-600 text-white"
+      : "border border-zinc-300 bg-white hover:bg-zinc-100"
+  }`}
+>
+  {copied ? "Copied!" : "Copy Code"}
+</button>
   );
 };
 
