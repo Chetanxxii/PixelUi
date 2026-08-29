@@ -27,6 +27,13 @@ export const components = [
   category: "Data Display",
   status: "Ready",
 },
+{
+  id: "checkbox",
+  title: "Checkbox",
+  description: "Accessible checkbox with label support.",
+  category: "Forms",
+  status: "Ready",
+},
   {
     id: "modal",
     title: "Modal",

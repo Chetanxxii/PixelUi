@@ -6,6 +6,7 @@ import InputPage from "./pages/InputPage";
 import Docs from "./pages/Docs";
 import CardPage from "./pages/CardPage";
 import BadgePage from "./pages/BadgePage";
+import CheckboxPage from "./pages/CheckboxPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/docs" element={<Docs />} />
         <Route path="/components/card" element={<CardPage />} />
         <Route path="/components/badge" element={<BadgePage />} />
+        <Route path="/components/checkbox" element={<CheckboxPage />} />
       </Routes>
     </div>
   );

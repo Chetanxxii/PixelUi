@@ -7,6 +7,7 @@ import { cardCode } from "../ui/Card/CardCode";
 import { buttonSnippet , cardSnippet } from "../../data/snippets";
 import { Link } from "react-router";
 import Badge from "../ui/Badge";
+import Checkbox from "../ui/Checkbox";
 
 
 import {
@@ -79,6 +80,7 @@ const ComponentShowcase = () => {
   <CardContent>
     <div className="mb-6">
       <p className="text-4xl font-bold">₹499</p>
+      
 
       <p className="mt-1 text-sm text-zinc-500">
         One-time payment
@@ -100,6 +102,14 @@ const ComponentShowcase = () => {
         <span>✓</span>
         <span>Copy & Paste components</span>
       </div>
+      <div className="mt-6 border-t border-zinc-200 pt-5">
+  <Checkbox
+    label="Lifetime updates included"
+    checked
+    disabled
+    onChange={(e) => onChange?.(e.target.checked)}
+  />
+</div>
     </div>
   </CardContent>
 
