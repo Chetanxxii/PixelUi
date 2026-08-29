@@ -6,6 +6,7 @@ import { buttonCode } from "../ui/Button/ButtonCode";
 import { cardCode } from "../ui/Card/CardCode";
 import { buttonSnippet , cardSnippet } from "../../data/snippets";
 import { Link } from "react-router";
+import Badge from "../ui/Badge";
 
 
 import {
@@ -68,7 +69,9 @@ const ComponentShowcase = () => {
       </div>
 
       <span className="rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium">
-        Popular
+       <Badge variant="success">
+  Popular
+</Badge>
       </span>
     </div>
   </CardHeader>

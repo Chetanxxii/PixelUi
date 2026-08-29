@@ -20,6 +20,13 @@ export const components = [
   category: "Layout",
   status: "Ready",
 },
+{
+  id: "badge",
+  title: "Badge",
+  description: "Small status indicators with multiple variants.",
+  category: "Data Display",
+  status: "Ready",
+},
   {
     id: "modal",
     title: "Modal",
