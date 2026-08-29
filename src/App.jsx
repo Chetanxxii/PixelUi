@@ -4,6 +4,7 @@ import Components from "./pages/Components";
 import ButtonPage from "./pages/ButtonPage";
 import InputPage from "./pages/InputPage";
 import Docs from "./pages/Docs";
+import CardPage from "./pages/CardPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/components/button" element={<ButtonPage />} />
         <Route path="/components/input" element={<InputPage />} />
         <Route path="/docs" element={<Docs />} />
+        <Route path="/components/card" element={<CardPage />} />
       </Routes>
     </div>
   );

@@ -14,12 +14,12 @@ export const components = [
   status: "Ready",
 },
   {
-    id: "card",
-    title: "Card",
-    description: "Flexible content container for layouts.",
-    category: "Layout",
-    status: "Coming Soon",
-  },
+  id: "card",
+  title: "Card",
+  description: "Flexible content container for layouts.",
+  category: "Layout",
+  status: "Ready",
+},
   {
     id: "modal",
     title: "Modal",
