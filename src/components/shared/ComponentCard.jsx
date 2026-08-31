@@ -39,16 +39,16 @@ const ComponentCard = ({ component }) => {
       </p>
 
       <div className="mt-6 flex items-center justify-between">
-        <span className="text-xs uppercase tracking-wider text-zinc-400">
-          {component.category}
-        </span>
+  <span className="rounded-full bg-zinc-100 px-3 py-1 text-xs text-zinc-600">
+    {component.category}
+  </span>
 
-        {component.status === "Ready" && (
-          <span className="text-sm font-medium text-zinc-900 group-hover:translate-x-1 transition-transform">
-            Open →
-          </span>
-        )}
-      </div>
+  {component.status === "Ready" && (
+    <span className="text-sm font-medium group-hover:translate-x-1 transition-transform">
+      Open →
+    </span>
+  )}
+</div>
     </Link>
   );
 };

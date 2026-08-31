@@ -8,15 +8,30 @@ import SearchBar from "../components/shared/SearchBar";
 import ComponentCard from "../components/shared/ComponentCard";
 
 import { components } from "../data/components";
+import CategoryFilter from "../components/shared/CategoryFilter";
 
 const Components = () => {
   const [search, setSearch] = useState("");
 
-  const filtered = useMemo(() => {
-    return components.filter((item) =>
-      item.title.toLowerCase().includes(search.toLowerCase())
-    );
-  }, [search]);
+  const [category, setCategory] = useState("All");
+
+  const categories = [
+  "All",
+  ...new Set(components.map((item) => item.category)),
+];
+
+ const filtered = useMemo(() => {
+  return components.filter((item) => {
+    const matchesSearch = item.title
+      .toLowerCase()
+      .includes(search.toLowerCase());
+
+    const matchesCategory =
+      category === "All" || item.category === category;
+
+    return matchesSearch && matchesCategory;
+  });
+}, [search, category]);
 
   return (
     <>
@@ -37,9 +52,18 @@ const Components = () => {
               Search, preview and copy handcrafted React +
               Tailwind components.
             </p>
+
+            <p className="mt-3 text-sm text-zinc-500">
+  {filtered.length} component{filtered.length !== 1 ? "s" : ""} available
+</p>
           </div>
 
           <SearchBar value={search} onChange={setSearch} />
+          <CategoryFilter
+  categories={categories}
+  active={category}
+  onChange={setCategory}
+/>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {filtered.map((component) => (
@@ -51,10 +75,20 @@ const Components = () => {
           </div>
 
           {filtered.length === 0 && (
-            <div className="mt-20 text-center text-zinc-500">
-              No components found.
-            </div>
-          )}
+  <div className="mt-20 text-center">
+    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-zinc-100 text-2xl">
+      🔍
+    </div>
+
+    <h3 className="mt-5 text-xl font-semibold">
+      No components found
+    </h3>
+
+    <p className="mt-2 text-zinc-500">
+      Try another search or category.
+    </p>
+  </div>
+)}
         </Container>
       </Section>
     </>
