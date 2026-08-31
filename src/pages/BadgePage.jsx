@@ -7,6 +7,9 @@ import PreviewCard from "../components/shared/PreviewCard";
 import CodeBlock from "../components/shared/CodeBlock";
 import PropsTable from "../components/shared/PropsTable";
 
+import UsageBlock from "../components/shared/UsageBlock";
+import { badgeUsage } from "../components/ui/Badge/BadgeCode";
+
 const badgeProps = [
   {
     name: "variant",
@@ -29,6 +32,11 @@ const BadgePage = () => {
         title="Badge.jsx"
         code={badgeCode}
       />
+
+      <UsageBlock
+  title="Usage"
+  code={badgeUsage}
+/>
 
       <PropsTable props={badgeProps} />
     </DocsLayout>

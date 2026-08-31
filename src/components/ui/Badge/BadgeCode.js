@@ -16,3 +16,13 @@ export const badgeCode = `const Badge = ({
     </span>
   );
 };`;
+
+export const badgeUsage = `import Badge from "../components/ui/Badge";
+
+export default function Demo() {
+  return (
+    <Badge variant="success">
+      Success
+    </Badge>
+  );
+}`;

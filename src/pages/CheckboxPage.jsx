@@ -7,6 +7,9 @@ import PreviewCard from "../components/shared/PreviewCard";
 import CodeBlock from "../components/shared/CodeBlock";
 import PropsTable from "../components/shared/PropsTable";
 
+import UsageBlock from "../components/shared/UsageBlock";
+import { checkboxUsage } from "../components/ui/Checkbox/CheckboxCode";
+
 const checkboxProps = [
   { name: "label", type: "string", default: '"Checkbox"' },
   { name: "checked", type: "boolean", default: "false" },
@@ -25,6 +28,10 @@ const CheckboxPage = () => {
       </PreviewCard>
 
       <CodeBlock title="Checkbox.jsx" code={checkboxCode} />
+      <UsageBlock
+  title="Usage"
+  code={checkboxUsage}
+/>
 
       <PropsTable props={checkboxProps} />
     </DocsLayout>

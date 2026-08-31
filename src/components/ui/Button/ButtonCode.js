@@ -35,3 +35,13 @@ export const buttonCode = `const Button = ({
 };
 
 export default Button;`;
+
+export const buttonUsage = `import Button from "../components/ui/Button";
+
+export default function Demo() {
+  return (
+    <Button variant="outline">
+      Continue
+    </Button>
+  );
+}`;

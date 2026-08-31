@@ -14,3 +14,11 @@ export const inputCode = `const Input = ({
 };
 
 export default Input;`;
+
+export const inputUsage = `import Input from "../components/ui/Input";
+
+export default function Demo() {
+  return (
+    <Input placeholder="Email address" />
+  );
+}`;

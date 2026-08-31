@@ -8,6 +8,9 @@ import CodeBlock from "../components/shared/CodeBlock";
 import PropsTable from "../components/shared/PropsTable";
 import ButtonPlayground from "../components/ui/Button/ButtonPlayground";
 
+import UsageBlock from "../components/shared/UsageBlock";
+import { buttonUsage } from "../components/ui/Button/ButtonCode";
+
 const buttonProps = [
   {
     name: "variant",
@@ -58,6 +61,11 @@ const ButtonPage = () => {
         title="Button.jsx"
         code={buttonCode}
       />
+
+      <UsageBlock
+  title="Usage"
+  code={buttonUsage}
+/>
 
       <PropsTable props={buttonProps} />
     </DocsLayout>

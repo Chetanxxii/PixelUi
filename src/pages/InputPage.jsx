@@ -1,11 +1,13 @@
 import DocsLayout from "../components/layout/DocsLayout";
 
 import InputPreview from "../components/ui/Input/InputPreview";
-import { inputCode } from "../components/ui/Input/InputCode";
+import { inputCode , inputUsage } from "../components/ui/Input/InputCode";
 
 import PreviewCard from "../components/shared/PreviewCard";
 import CodeBlock from "../components/shared/CodeBlock";
 import PropsTable from "../components/shared/PropsTable";
+
+import UsageBlock from "../components/shared/UsageBlock";
 
 const inputProps = [
   {
@@ -36,6 +38,10 @@ const InputPage = () => {
       </PreviewCard>
 
       <CodeBlock title="Input.jsx" code={inputCode} />
+      <UsageBlock
+  title="Usage"
+  code={inputUsage}
+/>
 
       <PropsTable props={inputProps} />
     </DocsLayout>

@@ -21,3 +21,19 @@ export const cardCode = `import {
     Footer content
   </CardFooter>
 </Card>`;
+
+export const cardUsage = `import {
+  Card,
+  CardContent,
+  CardTitle,
+} from "../components/ui/Card";
+
+export default function Demo() {
+  return (
+    <Card>
+      <CardContent>
+        <CardTitle>Pro Plan</CardTitle>
+      </CardContent>
+    </Card>
+  );
+}`;
