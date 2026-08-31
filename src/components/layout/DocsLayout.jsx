@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import Section from "./Section";
 import Container from "./Container";
+import Footer from "./Footer";
 
 const DocsLayout = ({
   title,
@@ -42,6 +43,7 @@ const DocsLayout = ({
           </div>
         </Container>
       </Section>
+      <Footer/>
     </>
   );
 };

@@ -2,7 +2,7 @@ import Navbar from "../components/layout/Navbar";
 import Hero from "../components/layout/Hero";
 import FeaturedComponents from "../components/layout/FeaturedComponents";
 import ComponentShowcase from "../components/layout/ComponentShowcase";
-
+import Footer from "../components/layout/Footer";
 
 const Home = () => {
   return (
@@ -11,6 +11,7 @@ const Home = () => {
       <Hero />
       <ComponentShowcase />
       <FeaturedComponents />
+      <Footer/>
     </>
   );
 };

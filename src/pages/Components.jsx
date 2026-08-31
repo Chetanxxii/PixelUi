@@ -9,6 +9,7 @@ import ComponentCard from "../components/shared/ComponentCard";
 
 import { components } from "../data/components";
 import CategoryFilter from "../components/shared/CategoryFilter";
+import Footer from "../components/layout/Footer";
 
 const Components = () => {
   const [search, setSearch] = useState("");
@@ -91,6 +92,7 @@ const Components = () => {
 )}
         </Container>
       </Section>
+      <Footer/>
     </>
   );
 };

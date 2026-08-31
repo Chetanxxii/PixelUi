@@ -3,6 +3,7 @@ import Navbar from "../components/layout/Navbar";
 import Section from "../components/layout/Section";
 import Container from "../components/layout/Container";
 import Badge from "../components/ui/Badge";
+import Footer from "../components/layout/Footer";
 
 const Docs = () => {
   return (
@@ -173,6 +174,7 @@ const Docs = () => {
     </div>
   </Container>
 </Section>
+<Footer/>
     </>
   );
 };
